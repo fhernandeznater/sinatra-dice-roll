@@ -55,3 +55,16 @@ get("/dice/5/4") do
   sum = first_die + second_die + third_die + fourth_die + fifth_die
 
   outcome = "You rolled a #{first_die}, a #{second_die}, a #{third_die}, a #{fourth_die}, and a #{fifth_die}. Your total is #{sum}."
+
+  "<h1>5d4</h1>
+  <p>#{outcome}</p>"
+end
+
+get("/dice/1/8") do
+  die = rand(1..8)
+
+  outcome = "You rolled a #{die}"
+
+  "<h1>1d8</h1>
+  <p>#{outcome}</p>"
+end
