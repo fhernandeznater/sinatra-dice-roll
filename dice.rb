@@ -51,6 +51,7 @@ get("/dice/1/20") do
 
   "<h1>1d20</h1>
   <p>#{outcome}</p>"
+end
 
 get("/dice/5/4") do
   first_die = rand(1..4)
